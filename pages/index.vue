@@ -42,17 +42,15 @@
       <div class="col-lg-5">
         <div class="card bg-sbuku rounded-5 ms-4" style="height: 350px;">
           <div class="card-body">
-            <nuxt-link to="./buku">
+            <nuxt-link to="/buku">
               <div class="row">
-                <div class="col p-5">
-                  <h1 style="font-size: 120px; margin-right: 200px;">{{ jumlahp }}</h1>
-                </div>
-              <div class="col mt-5 p-5"><h2 >Buku</h2></div>
+                <div class="col p-5"><h1 style="font-size: 120px; margin-right: 200px;">{{ jumlahp }}</h1></div>
+                <div class="col mt-5 p-5"><h2 >Buku</h2></div>
               </div>
             </nuxt-link>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
     <chart/>
@@ -60,6 +58,9 @@
 </template>
 
 <script setup>
+useHead({title:'aplikasi perpus digital', 
+  meta:[{name:'description', content:'selamat datang di perpus digital SMKN 4'}]
+})
 const supabase = useSupabaseClient();
 const jumlahp = ref(0);
 const jumlahb =ref(0);

@@ -60,6 +60,9 @@
 </template>
 
 <script setup>
+useHead({title:'aplikasi perpus digital', 
+  meta:[{name:'description', content:'selamat mengisi kunjungan'}]
+})
 const supabase = useSupabaseClient();
 
 const members = ref([]);

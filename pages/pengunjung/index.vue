@@ -36,6 +36,9 @@
 </template>
 
 <script setup>
+useHead({title:'aplikasi perpus digital', 
+  meta:[{name:'description', content:'selamat mengujung'}]
+})
 const supabase = useSupabaseClient();
 
 const visitors  = ref([]);

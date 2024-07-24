@@ -13,7 +13,7 @@
                     <li class="list-group-item">Tahun terbit : {{ buku.tahun_terbit }}</li>
                     <li class="list-group-item">{{buku.deskipsi}}</li>
                 </ul>
-             </div>
+            </div>
         <div class="" style="margin-left: 10px;"></div>
         <nuxt-link to="../buku"><button type="submit" class="btn btn-lg btn-dark rounded-5 px-5 bg-primary text-white" style="float: right; margin-bottom: 15px;">KEMBALI</button></nuxt-link>
     </div>

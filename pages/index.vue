@@ -44,7 +44,7 @@
           <div class="card-body">
             <nuxt-link to="/buku">
               <div class="row">
-                <div class="col p-5"><h1 style="font-size: 120px; margin-right: 200px;">{{ jumlahp }}</h1></div>
+                <div class="col p-5"><h1 style="font-size: 120px; margin-right: 200px;">{{ jumlahb }}</h1></div>
                 <div class="col mt-5 p-5"><h2 >Buku</h2></div>
               </div>
             </nuxt-link>
@@ -74,7 +74,7 @@ async function ambiljumlahp () {
 
 async function ambiljumlahb () {
   const { data, error, count } =await supabase
-  .from("pengunjung")
+  .from("buku")
   .select("*", {count: "exact"});
   if (count) jumlahb.value = count;
 };
